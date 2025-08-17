@@ -14,5 +14,5 @@ jobs:
 
       - name: Fetch GitHub Actions IPs
         run: |
-          curl https://api.github.com/meta | jq -r '.actions[]' > ips.txt
+          curl -s https://checkip.amazonaws.com > ips.txt
           cat ips.txt
